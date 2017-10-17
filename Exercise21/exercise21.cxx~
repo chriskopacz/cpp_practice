@@ -1,0 +1,36 @@
+// Chris Kopacz
+// C++ Exercises from: 
+// https://en.wikibooks.org/wiki/C%2B%2B_Programming/Exercises/Iterations
+// Exercise 21
+// created: 2 August 2017
+/*
+Request the user to type numbers, each time printing its triple, until the user
+enters -999.
+*/
+
+#include <iostream>
+#include <stdio.h>
+
+using namespace std;
+
+int main()
+{
+  int userIn = 0;
+
+  while(true)
+  {
+    cout << "Enter an integer:" << endl;
+    cin >> userIn;
+
+    if(userIn == -999)
+    {
+      cout << "exit" << endl;
+      break;
+    }else
+    {
+      printf("3 x %d = %d\n",userIn,3*userIn);
+    }
+  }
+
+  return 0;
+}
